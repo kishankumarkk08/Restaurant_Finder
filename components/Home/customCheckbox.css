@@ -1,0 +1,17 @@
+
+.custom-checkbox {
+  width: 15px;
+  height: 15px;
+  accent-color: rgb(220, 83, 83); 
+  cursor: pointer;
+}
+
+/* For WebKit browsers (Safari, Chrome) */
+.custom-checkbox::-webkit-checkbox {
+  background-color: rgb(220, 83, 83);
+}
+
+/* Fallback for older browsers */
+.custom-checkbox:checked {
+  background-color: rgb(220, 83, 83);
+}
