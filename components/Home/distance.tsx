@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './slider.css'
 
 const distance = () => {
-  const [distance, setDistance] = useState<number>(1000)
+  const [distance, setDistance] = useState<number>(5)
   return (
     <div className='flex flex-col'>
       <h2 className='font-bold text-xl lg:ml-4 lg:mt-10 mt-5 ml-4'>
