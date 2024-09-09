@@ -1,6 +1,7 @@
 "use client"
 import { SessionProvider } from 'next-auth/react'
 import React, { ReactNode } from 'react'
+import { RecoilRoot } from 'recoil';
 
 interface ProviderProps {
   children: ReactNode;
@@ -9,7 +10,10 @@ interface ProviderProps {
 function Provider({ children }: ProviderProps) {
   return (
     <SessionProvider>
-      {children}
+      <RecoilRoot>
+        {children}
+      </RecoilRoot>
+
     </SessionProvider>
   )
 }
